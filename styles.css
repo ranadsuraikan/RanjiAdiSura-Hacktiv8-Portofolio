@@ -1,0 +1,230 @@
+*, html, body {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Helvetica;
+	scroll-behavior: smooth;
+    
+}
+/* Reset default margin and padding for the ul element */
+ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-image: url("crossline-lines.png");
+}
+
+/* Style the navbar */
+nav {
+    background:linear-gradient(45deg, #0008ff, #00ff0d); /* Warna latar belakang */
+    padding: 5px;
+    border-bottom: #353336;
+    
+}
+
+nav ul {
+    display: flex; /* Menampilkan item navbar dalam baris horizontal */
+    justify-content: flex-end; /* Memindahkan item ke kanan */
+    padding: 10px; /* Memberikan ruang di sekitar item navbar */
+}
+
+nav li {
+    margin: 0 10px; /* Memberikan ruang di antara item navbar */
+}
+
+nav a {
+    text-decoration: none; /* Menghilangkan garis bawah pada tautan */
+    color: #fff; /* Warna teks */
+}
+
+nav a:hover {
+    text-decoration: underline; /* Tambahkan garis bawah saat mouse hover */
+}
+
+/* Reset some default styles */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+h4 {
+    margin-bottom: 10px;
+}
+
+.fe {
+    padding-bottom: 10px;
+}
+.header{
+    
+
+    background-color: white;
+    padding: 30px;
+    display: flex;
+    gap: 150px;
+    justify-content: center;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    margin-top: 40px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    display: flex;
+
+}
+.person{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+.image{
+    width: 150px;
+    height: 150px;
+    
+    display: flex;
+    
+}
+a {
+    text-decoration: none;
+}
+.kontak-btn {
+    border-radius:20px;
+}
+
+.resume-btn {
+    border-radius: 20px;
+}
+.image img{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    border-radius: 50%;
+    
+
+    
+   
+}
+.person-cta{
+    display: flex;
+    gap: 16px;
+    display: flex;
+    
+}
+.person-cta a{
+    color: rgb(255, 255, 255);
+    padding: 8px 12px ;
+    background:linear-gradient(45deg, #0008ff, #00ff0d);
+    display: flex;
+}
+.person-data{
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.label{
+    display: flex;
+    align-items: center;
+    padding: 0;
+    height: 25px;
+   
+    
+}
+.label strong{
+    width: 150px;
+
+}
+
+
+.form {
+    
+    margin-top: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    background-color: #ffffff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    margin-bottom: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+}
+
+input[type=text] {
+    margin: 10px 10px;
+    padding: 10px 15px;
+    width: 100%;
+    margin: 5px;
+    padding: 5px;
+    border: 1px solid #d7d7d7;
+    border-radius: 10px;
+    outline: none;
+    transition: 0.5s;
+    font-weight: bold;
+    background-color: #4b454f32;
+    
+} 
+
+.submit {
+    margin: 10px 20px;
+    padding: 7px 15px;
+    width:100%;
+    margin: 5px;
+    padding: 5px;
+    background:linear-gradient(45deg, #0008ff, #00ff0d);
+    border-radius: 8px;
+    outline: none;
+    transition: 0.5s;
+    font-weight: bold;
+    color: #fff;
+} 
+
+@media screen and (max-width: 768px) {
+    /* Gaya CSS yang ingin Anda ubah untuk layar berukuran 768px atau kurang */
+    nav ul {
+        justify-content: center; /* Pusatkan item navbar pada layar kecil */
+    }
+
+    nav li {
+        margin: 0 5px; /* Kurangi ruang di antara item navbar pada layar kecil */
+    }
+
+    .header {
+        flex-direction: column; /* Atur tampilan header menjadi kolom pada layar kecil */
+        align-items: center; /* Pusatkan konten header */
+        text-align: center; /* Pusatkan teks */
+    }
+    
+    .person {
+        flex-direction: column; /* Atur tampilan person menjadi kolom pada layar kecil */
+        align-items: center; /* Pusatkan konten person */
+        gap: 10px;
+    }
+    
+    .person-cta {
+        flex-direction: column; /* Atur tampilan cta menjadi kolom pada layar kecil */
+        align-items: center; /* Pusatkan konten cta */
+        gap: 10px;
+    }
+    
+    .person-cta a {
+        padding: 5px 10px; /* Ubah padding pada tombol cta */
+    }
+}
+
+.footer {
+    background-color: #353336; /* Warna latar belakang footer */
+    color: #aa00ff; /* Warna teks footer */
+    text-align: center;
+    padding: 10px 0; /* Padding atas dan bawah 10px, padding kiri dan kanan 0 */
+    margin-top:20px;
+}
